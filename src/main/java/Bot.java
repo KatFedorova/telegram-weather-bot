@@ -27,7 +27,7 @@ import static org.glassfish.jersey.client.ClientProperties.PROXY_PASSWORD;
 
 public class Bot extends TelegramLongPollingBot {
     private static String BOT_NAME = "Kate_First_Weather_Bot";
-    private static String BOT_TOKEN = "1066638100:AAGrpYXdmhwdw05QyZU8VZAXO3mkyVvaEq0";
+    private static String BOT_TOKEN = "my bot token here";
 
     private static String PROXY_HOST = "66.110.216.105" /* proxy host */;
     private static Integer PROXY_PORT = 39431 /* proxy port */;
