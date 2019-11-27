@@ -29,8 +29,8 @@ public class Bot extends TelegramLongPollingBot {
     private static String BOT_NAME = "Kate_First_Weather_Bot";
     private static String BOT_TOKEN = "1066638100:AAGrpYXdmhwdw05QyZU8VZAXO3mkyVvaEq0";
 
-    private static String PROXY_HOST = "166.62.121.76" /* proxy host */;
-    private static Integer PROXY_PORT = 48329 /* proxy port */;
+    private static String PROXY_HOST = "66.110.216.105" /* proxy host */;
+    private static Integer PROXY_PORT = 39431 /* proxy port */;
 
     public Bot(DefaultBotOptions options) {
         super(options);
@@ -90,7 +90,7 @@ public class Bot extends TelegramLongPollingBot {
                     sendMsg(message, "Здравствуй! Давай узнаем погоду!");
                     break;
                 case "Узнать погоду!":
-                    sendMsg(message, "Тут как-будто погода и совет тепло одеваться");
+                    sendMsg(message, showMeWeather());
                     break;
                 default:
                     sendMsg(message, "Такой команды не существует. Отправь /start, чтобы начать работу," +
@@ -124,7 +124,7 @@ public class Bot extends TelegramLongPollingBot {
         return BOT_TOKEN;
     }
 
-   /* public String showMeWeather() {
+    public String showMeWeather() {
         String showWeather;
         double lat = 60.06715;
         double lon = 30.334128;
@@ -151,5 +151,5 @@ public class Bot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
         return "Не найдено";
-    }*/
+    }
 }
