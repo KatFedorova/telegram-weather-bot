@@ -129,7 +129,7 @@ public class Bot extends TelegramLongPollingBot {
         String showWeather;
         double latitude =60.06715;
         double longitude = 30.334128;
-        String myAPIkey = "72c922a6d9d7cdb2d8a88561fbfb9cb3";
+        String myAPIkey = "key is here";
 
         String urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=metric&APPID=" + myAPIkey;
 
