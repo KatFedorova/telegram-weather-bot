@@ -11,26 +11,20 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-
-import static org.glassfish.jersey.client.ClientProperties.PROXY_PASSWORD;
 
 public class Bot extends TelegramLongPollingBot {
     private static String BOT_NAME = "Kate_First_Weather_Bot";
-    private static String BOT_TOKEN = "my bot token here";
+    private static String BOT_TOKEN = "key is here";
 
-    private static String PROXY_HOST = "66.110.216.105" /* proxy host */;
-    private static Integer PROXY_PORT = 39431 /* proxy port */;
+    private static String PROXY_HOST = "52.177.121.201" /* proxy host */;
+    private static Integer PROXY_PORT = 1080 /* proxy port */;
 
     public Bot(DefaultBotOptions options) {
         super(options);
@@ -90,11 +84,11 @@ public class Bot extends TelegramLongPollingBot {
                     sendMsg(message, "Здравствуй! Давай узнаем погоду!");
                     break;
                 case "Узнать погоду!":
-                    sendMsg(message, showMeWeather());
+                    sendMsg(message, "отправь геолокацию");
                     break;
                 default:
-                    sendMsg(message, "Такой команды не существует. Отправь /start, чтобы начать работу," +
-                            "/settings, чтобы настроить меня, или /help, если тебе нужна помощь.");
+                    sendMsg(message, testCoordinate(message));
+                   // sendMsg(message, showMeWeather(message));
 
             }
         }
@@ -116,6 +110,13 @@ public class Bot extends TelegramLongPollingBot {
 
    }
 
+    public String testCoordinate(Message message) {
+        double latitude = message.getLocation().getLatitude();
+        double longitude = message.getLocation().getLongitude();
+        return "Latitude is: " + latitude + ", longitude is: " + longitude;
+    }
+
+
     public String getBotUsername() {
         return BOT_NAME;
     }
@@ -124,13 +125,13 @@ public class Bot extends TelegramLongPollingBot {
         return BOT_TOKEN;
     }
 
-    public String showMeWeather() {
+    public String showMeWeather(Message message) {
         String showWeather;
-        double lat = 60.06715;
-        double lon = 30.334128;
+        double latitude =60.06715;
+        double longitude = 30.334128;
         String myAPIkey = "72c922a6d9d7cdb2d8a88561fbfb9cb3";
 
-        String urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric&APPID=" + myAPIkey;
+        String urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=metric&APPID=" + myAPIkey;
 
         try {
             URL url = new URL(urlStr);
