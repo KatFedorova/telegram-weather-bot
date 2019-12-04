@@ -1,4 +1,4 @@
-package Weather;
+package io.github.ITMO.weather_bot.model.weather;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;

@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46cadd63-297a-480c-bcd8-2d9b44cbc766" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_25_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApiTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Clouds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Clouds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Coord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Coord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Sys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Sys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/WeatherItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/WeatherItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Bot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Clouds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Coord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Sys.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/WeatherItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Wind.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,59 +37,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+              <folding>
+                <element signature="method#testCoordinate#0;class#Bot#0" />
+                <element signature="e#5254#5255#0" expanded="true" />
+                <element signature="e#5321#5322#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Update.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2436">
-              <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
               <folding>
-                <element signature="e#4529#4530#0" expanded="true" />
-                <element signature="e#4560#4561#0" expanded="true" />
-                <element signature="e#4595#4596#0" expanded="true" />
-                <element signature="e#4627#4628#0" expanded="true" />
-                <element signature="e#5124#5222#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1865#1866#0" expanded="true" />
+                <element signature="e#1924#1925#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Paths.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-              <folding>
-                <element signature="e#2673#2674#0" expanded="true" />
-                <element signature="e#2741#2742#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Weather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-              <folding>
-                <element signature="e#1572#1573#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
               <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
@@ -86,37 +97,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Sys.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Wind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Weather/WeatherItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/city.list.json">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="262">
-              <caret line="12444" column="18" selection-start-line="12444" selection-start-column="13" selection-end-line="12444" selection-end-column="18" />
+            <state relative-caret-position="260778">
+              <caret line="12418" column="22" selection-start-line="12418" selection-start-column="13" selection-end-line="12418" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1148">
+              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,12 +150,20 @@
         <option value="$PROJECT_DIR$/src/main/java/Weather/Wind.java" />
         <option value="$PROJECT_DIR$/src/main/java/ApiTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Subscriber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Bot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="579" />
-    <option name="y" value="419" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="455" />
+    <option name="y" value="57" />
     <option name="width" value="1300" />
     <option name="height" value="1044" />
   </component>
@@ -169,8 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,7 +204,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="bot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
@@ -232,21 +243,49 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.telegram:telegrambots-meta:4.4.0.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.telegram:telegrambots-meta:4.4.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="telegrambots-meta-4.4.0.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.telegram:telegrambots-meta:4.4.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="telegrambots-meta-4.4.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.telegram:telegrambots-meta:4.4.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="telegrambots-meta-4.4.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.telegram:telegrambots-meta:4.4.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="telegrambots-meta-4.4.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +325,14 @@
       </method>
     </configuration>
     <configuration name="Bot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bot" />
+      <option name="MAIN_CLASS_NAME" value="io.github.ITMO.weather_bot.bot.Bot" />
+      <module name="MyBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.ITMO.weather_bot.bot.DBConnection" />
       <module name="MyBot" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -295,6 +341,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Bot" />
+        <item itemvalue="Application.DBConnection" />
         <item itemvalue="Application.ApiTest" />
       </list>
     </recent_temporary>
@@ -321,14 +368,14 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21588486" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.19501625" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.1928494" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.26868907" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -369,7 +416,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Coord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Coord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
@@ -379,17 +426,80 @@
     <entry file="file://$PROJECT_DIR$/MyBot.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Clouds.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Clouds.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ApiTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="247" column="20" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="20" />
+          <folding>
+            <element signature="e#8898#8899#0" expanded="true" />
+            <element signature="e#8934#8935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestReader.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding>
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2741#2742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Weather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+          <folding>
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="655">
           <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Sys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Wind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/WeatherItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1181">
+          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -404,60 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/city.list.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="262">
-          <caret line="12444" column="18" selection-start-line="12444" selection-start-column="13" selection-end-line="12444" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="247" column="20" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="20" />
-          <folding>
-            <element signature="e#8898#8899#0" expanded="true" />
-            <element signature="e#8934#8935#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Paths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Sys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/WeatherItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
@@ -468,42 +525,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Weather.java">
+    <entry file="file://$USER_HOME$/Desktop/city.list.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="260778">
+          <caret line="12418" column="22" selection-start-line="12418" selection-start-column="13" selection-end-line="12418" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+        <state relative-caret-position="609">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
           <folding>
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Weather/Wind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2436">
-          <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+        <state relative-caret-position="1148">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
           <folding>
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#4595#4596#0" expanded="true" />
-            <element signature="e#4627#4628#0" expanded="true" />
-            <element signature="e#5124#5222#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding>
+            <element signature="method#testCoordinate#0;class#Bot#0" />
+            <element signature="e#5254#5255#0" expanded="true" />
+            <element signature="e#5321#5322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Update.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -568,7 +648,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.google.code.gson:gson:2.8.6</last-edited>
+          <last-edited>org.xerial:sqlite-jdbc:3.25.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

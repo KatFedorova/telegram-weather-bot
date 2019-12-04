@@ -1,4 +1,4 @@
-package Weather;
+package io.github.ITMO.weather_bot.model.weather;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,4 +1,5 @@
-import com.google.gson.Gson;
+package io.github.ITMO.weather_bot.bot;
+
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -12,22 +13,11 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import static io.github.ITMO.weather_bot.bot.Utils.getToken;
+import static io.github.ITMO.weather_bot.bot.Utils.showWeather;
 
 public class Bot extends TelegramLongPollingBot {
     private static String BOT_NAME = "Kate_First_Weather_Bot";
@@ -55,6 +45,8 @@ public class Bot extends TelegramLongPollingBot {
             botOptions.setProxyType(DefaultBotOptions.ProxyType.SOCKS5);
 
             telegramBotsApi.registerBot(new Bot(botOptions));
+
+
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -81,7 +73,7 @@ public class Bot extends TelegramLongPollingBot {
             switch (message.getText()) {
                 case "/help":
                 case "/помощь":
-                    sendMsg(message, "Чем я могу помочь?" +getToken(0));
+                    sendMsg(message, "Чем я могу помочь?");
                     break;
 
                 case "/settings":
@@ -96,7 +88,8 @@ public class Bot extends TelegramLongPollingBot {
                 case "/subscribe":
                 case "/подписаться":
 
-                    sendMsg(message, "Этого я ещё не умею, но скоро научусь ^^' ");
+                    sendMsg(message, "Введи геолокацию для подписки");
+
                     break;
                 case "Узнать погоду!":
                     sendMsg(message, "Жми на скрепку, чтобы сообщить свою геопозицию");
@@ -108,8 +101,18 @@ public class Bot extends TelegramLongPollingBot {
         }
         if ((message != null) && message.hasLocation()) {
             sendMsg(message, showWeather(message));
-        }
-    }
+
+
+            DBConnection dbConnection = new DBConnection();
+            double latitude = message.getLocation().getLatitude();
+            double longitude = message.getLocation().getLongitude();
+
+            dbConnection.open();
+            dbConnection.insert(message.getChatId().toString(), latitude, longitude); //запись в бд
+            dbConnection.close();
+
+        }}
+
 
     public void setButtons(SendMessage sendMessage) {
        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -141,49 +144,9 @@ public class Bot extends TelegramLongPollingBot {
         return BOT_TOKEN;
     }
 
-    public static String showWeather(Message message) {
-        String showWeather;
-        double latitude = message.getLocation().getLatitude();
-        double longitude = message.getLocation().getLongitude();
-        String myAPIkey = getToken(1);
 
-        String urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&units=metric&APPID=" + myAPIkey;
 
-        try {
-            URL url = new URL(urlStr);
-            URLConnection urlConnection = url.openConnection();
-            //  BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-            //  String input;
-            //  while ((input = br.readLine()) != null) {
-            //      System.out.println(input);
-            //  }
-            //  br.close();
 
-            Gson gson = new Gson();
-            Weather.Weather weather = gson.fromJson(new InputStreamReader(urlConnection.getInputStream()), Weather.Weather.class);
 
-            showWeather = "За окном " +weather.getMain().getTemp() +"°C. \nДавление " + pressureConverter(weather.getMain().getPressure()) +" мм.рт.ст.";
-            return showWeather;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "Не найдено";
-    }
-    public static String pressureConverter(double value) {
-        return String.format("%.1f", value / 1.333);
-    }
-
-    public static String getToken(int i) {
-        String pathName = "C:\\Keys\\botKeys.txt";
-        List<String> keys = new ArrayList<>();
-        Path path = Paths.get(pathName);
-
-        try (Stream<String> lineStream = Files.lines(path)) {
-            keys = lineStream.collect(Collectors.toList());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return keys.get(i);
-    }
 
 }
