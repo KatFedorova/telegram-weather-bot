@@ -29,18 +29,49 @@ public class Utils {
             URLConnection urlConnection = url.openConnection();
 
             Gson gson = new Gson();
-            io.github.ITMO.weather_bot.model.weather.Weather weather = gson.fromJson(new InputStreamReader(urlConnection.getInputStream()), io.github.ITMO.weather_bot.model.weather.Weather.class);
+            io.github.ITMO.weather_bot.model.weather.Weather weather =
+                    gson.fromJson(new InputStreamReader(urlConnection.getInputStream()),
+                            io.github.ITMO.weather_bot.model.weather.Weather.class);
 
-            showWeather = "За окном " +weather.getMain().getTemp() +"°C. \nДавление " + pressureConverter(weather.getMain().getPressure()) +" мм.рт.ст.";
+            showWeather = "За окном " + weather.getMain().getTemp() + "°C. \nДавление " + pressureConverter(weather.getMain().getPressure()) + " мм.рт.ст.";
             return showWeather;
         } catch (IOException e) {
             e.printStackTrace();
         }
         return "Не найдено";
     }
+
+    public static String showForecast(Message message) {
+        String showForecast;
+        double latitude = message.getLocation().getLatitude();
+        double longitude = message.getLocation().getLongitude();
+        String myAPIkey = getToken(1);
+
+        String urlStr = "https://api.openweathermap.org/data/2.5/forecast?lat="
+                + latitude + "&lon=" + longitude + "&units=metric&APPID=" + myAPIkey;
+
+        try {
+            URL url = new URL(urlStr);
+            URLConnection urlConnection = url.openConnection();
+
+            Gson gson = new Gson();
+            io.github.ITMO.weather_bot.model.weather_forecast.Forecast forecast =
+                    gson.fromJson(new InputStreamReader(urlConnection.getInputStream()),
+                            io.github.ITMO.weather_bot.model.weather_forecast.Forecast.class);
+
+            showForecast = " тут прогноз" ;
+            return showForecast;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "Не найдено";
+    }
+
+
     public static String pressureConverter(double value) {
         return String.format("%.1f", value / 1.333);
     }
+
     public static String getToken(int i) {
         String pathName = "C:\\Keys\\botKeys.txt";
         List<String> keys = new ArrayList<>();

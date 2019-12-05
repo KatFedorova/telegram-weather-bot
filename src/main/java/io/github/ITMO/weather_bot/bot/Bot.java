@@ -129,12 +129,6 @@ public class Bot extends TelegramLongPollingBot {
 
    }
 
-    public String testCoordinate(Message message) {
-        double latitude = message.getLocation().getLatitude();
-        double longitude = message.getLocation().getLongitude();
-        return "Latitude is: " + latitude + ", longitude is: " + longitude;
-    }
-
 
     public String getBotUsername() {
         return BOT_NAME;

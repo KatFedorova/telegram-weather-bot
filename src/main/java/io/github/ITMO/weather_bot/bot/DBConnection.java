@@ -1,10 +1,7 @@
 package io.github.ITMO.weather_bot.bot;
 
-import sun.plugin2.message.Message;
-
-import javax.management.Query;
 import java.sql.*;
-import java.util.Scanner;
+
 
 public class DBConnection {
 
@@ -21,11 +18,7 @@ public class DBConnection {
     }
 
     public void insert(String chatId, double latitude, double longitude) { //запись в бд
-     //  Scanner scanner = new Scanner(System.in);
-     //  System.out.println("Enter chatId: ");
-     //  String chatId = scanner.nextLine();
-     //  System.out.println("Enter lastLocation: ");
-     //  String lastLocation = scanner.nextLine();
+
         String lat = Double.toString(latitude);
         String lon = Double.toString(longitude);
 

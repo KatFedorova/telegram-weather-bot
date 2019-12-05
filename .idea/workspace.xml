@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46cadd63-297a-480c-bcd8-2d9b44cbc766" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_xerial_sqlite_jdbc_3_25_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Clouds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Clouds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Coord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Coord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Sys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Sys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/WeatherItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/WeatherItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Wind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Clouds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Coord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Sys.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Weather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/WeatherItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Weather/Wind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/Subscriber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,81 +22,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Coord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-              <folding>
-                <element signature="method#testCoordinate#0;class#Bot#0" />
-                <element signature="e#5254#5255#0" expanded="true" />
-                <element signature="e#5321#5322#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Clouds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Update.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="38" column="33" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1865#1866#0" expanded="true" />
-                <element signature="e#1924#1925#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding>
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/city.list.json">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="260778">
-              <caret line="12418" column="22" selection-start-line="12418" selection-start-column="13" selection-end-line="12418" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1148">
-              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+            <state relative-caret-position="539">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/City.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Forecast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-448">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Rain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Sys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/WeatherItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Wind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -131,6 +128,7 @@
       <find>peters</find>
       <find>mosk</find>
       <find>peter</find>
+      <find>sa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,12 +154,25 @@
         <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Bot.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/BotState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/Subscriber.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Clouds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Coord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Forecast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/ListItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Rain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Sys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/WeatherItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Wind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="455" />
     <option name="y" value="57" />
     <option name="width" value="1300" />
@@ -214,6 +225,35 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
               <item name="bot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="weather_forecast" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TelegramWeatherBot" type="b2602c69:ProjectViewProjectNode" />
@@ -284,8 +324,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,14 +408,14 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14818764" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14978679" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.1928494" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.1928494" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.26868907" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -514,24 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/city.list.json">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="260778">
-          <caret line="12418" column="22" selection-start-line="12418" selection-start-column="13" selection-end-line="12418" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -539,51 +561,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/Subscriber.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="504">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/BotState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-          <folding>
-            <element signature="method#testCoordinate#0;class#Bot#0" />
-            <element signature="e#5254#5255#0" expanded="true" />
-            <element signature="e#5321#5322#0" expanded="true" />
-          </folding>
+    <entry file="file://$USER_HOME$/Desktop/city.list.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="280">
+          <caret line="12441" column="28" selection-start-line="12441" selection-start-column="13" selection-end-line="12441" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots-meta/4.4.0.1/telegrambots-meta-4.4.0.1.jar!/org/telegram/telegrambots/meta/api/objects/Update.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="420">
           <caret line="38" column="33" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/Subscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/ListItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Forecast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Rain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Sys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/WeatherItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Wind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Coord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Clouds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/model/weather_forecast/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/ITMO/weather_bot/bot/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
